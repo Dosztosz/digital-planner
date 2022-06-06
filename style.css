@@ -2,20 +2,22 @@ body {
   margin: 0;
   padding: 0;
   background-color: #faf8ff;
+  font-family: 'Dancing Script';
 }
 
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 1000px;
+  min-height: 50vw;
 }
 
 .mini-menu {
   margin: 0;
   padding-top: 10px;
   padding-left: 10px;
-  width: 1.5vw;
+  padding-right: 10px;
+  width: 2vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,7 +29,7 @@ body {
 }
 
 .mini-menu .icon {
-  font-size: 20px;
+  font-size: 1.5vw;
   margin-bottom: 50px;
   color: #a990dc;
 }
@@ -36,14 +38,34 @@ body {
   margin: 0;
   width: 93.5vw;
   height: 100px;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4vw;
+}
+
+.content .list {
+  margin: 1.5vw;
+}
+
+.content .list .title h2 {
+  font-size: 1.5vw;
+}
+
+.content .list .description {
+  font-size: 1vw;
+  border: 1px dotted;
+  border-radius: 1vw;
 }
 
 .navbar {
+  font-family: 'Dancing Script';
+  color: white;
+  font-size: 1vw;
   margin-top: 20px;
   padding-top: 10px;
   margin: 0;
-  width: 4vw;
+  width: 5.5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,26 +77,46 @@ body {
 }
 
 .navbar .block {
-  margin-top: 20px;
+  margin-top: 3vw;
   display: block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  width: 100px;
-  height: 50px;
+  width: 7vw;
+  height: 3vw;
   text-align: center;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-top-left-radius: 1vw;
+  border-top-right-radius: 1vw;
 }
 
 .a {
   background-color: #a990dc;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.a:hover {
+  background-color: #dccbff;
 }
 
 .b {
   background-color: #b99df0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.b:hover {
+  background-color: #dccbff;
 }
 
 .c {
+  background-color: #dccbff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.c:hover {
   background-color: #dccbff;
 }
 
@@ -86,19 +128,24 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.contain .header {
-  font-family: 'Dancing Script';
+.contain h1 {
   font-size: 22px;
   text-align: center;
+  font-size: 5vw;
 }
 
-.contain .header h1 {
-  font-size: 5vw;
+.contain a {
   color: white;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contain a:hover {
+  color: #dccbff;
 }
 
 .contain .row {
-  font-family: 'Dancing Script';
   font-size: 22px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;

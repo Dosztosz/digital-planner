@@ -2,76 +2,121 @@ body {
     margin: 0;
     padding: 0;
     background-color: #faf8ff;
+    font-family: 'Dancing Script';
 }
+
 .container {
     display: flex;
-    min-height: 1000px;
+    min-height: 50vw;
 }
+
 .mini-menu {
     margin: 0;
     padding-top: 10px;
     padding-left: 10px;
-    width: 1.5vw;
+    padding-right: 10px;
+    width: 2vw;
     display: flex;
     flex-direction: column;
     background-color: #eae5f7;
     .icon {
-        font-size: 20px;
+        font-size: 1.5vw;
         margin-bottom: 50px;
         color: #a990dc;
     }
 }
+
 .content {
     margin: 0;
     width: 93.5vw;
     height: 100px;
-    display: block;
+    display: flex;
+    padding: 4vw;
+    .list {
+        margin: 1.5vw;
+        .title {
+            h2 {
+                font-size: 1.5vw;
+            }
+        }
+        .description {
+            font-size: 1vw;
+            border: 1px dotted;
+            border-radius: 1vw;
+        }
+    }
 }
+
 .navbar {
+    font-family: 'Dancing Script';
+    color: white;
+    font-size: 1vw;
     margin-top: 20px;
     padding-top: 10px;
     margin: 0;
-    width: 4vw;
+    width: 5.5vw;
     display: flex;
     flex-direction: column;
     gap: 35px;
-    .block{
-        margin-top: 20px;
+    .block {
+        margin-top: 3vw;
         display: block;
+        transition: 0.5s;
         transform: rotate(90deg);
-        width: 100px;
-        height: 50px;
+        width: 7vw;
+        height: 3vw;
         text-align: center;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
+        border-top-left-radius: 1vw;
+        border-top-right-radius: 1vw;
     }
 }
+
 .a {
     background-color: #a990dc;
+    transition: 0.3s;
+    &:hover {
+        background-color: #dccbff;
+    }
 }
-.b {
 
+.b {
     background-color: #b99df0;
+    transition: 0.3s;
+    &:hover {
+        background-color: #dccbff;
+    }
 }
+
 .c {
     background-color: #dccbff;
+    transition: 0.3s;
+    &:hover {
+        background-color: #dccbff;
+    }
 }
+
+//index.html
 .contain {
     position: absolute;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    .header{
-        font-family: 'Dancing Script';font-size: 22px;
+    h1 {
+        font-size: 22px;
         text-align: center;
-        h1 {
-            font-size: 5vw;
-            color: white;
+        font-size: 5vw;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+        transition: 0.3s;
+        &:hover {
+            color: #dccbff;
         }
     }
-    .row{
-        font-family: 'Dancing Script';font-size: 22px;
+    .row {
+        font-size: 22px;
         justify-content: center;
         margin: 0;
         padding: 0;
@@ -90,8 +135,9 @@ body {
         }
     }
 }
+
 .login {
-    background: url('background.jpg') no-repeat center center fixed; 
+    background: url('background.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
