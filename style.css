@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #faf8ff;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 1000px;
+}
+
+.mini-menu {
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 1.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #eae5f7;
+}
+
+.mini-menu .icon {
+  font-size: 20px;
+  margin-bottom: 50px;
+  color: #a990dc;
+}
+
+.content {
+  margin: 0;
+  width: 93.5vw;
+  height: 100px;
+  display: block;
+}
+
+.navbar {
+  margin-top: 20px;
+  padding-top: 10px;
+  margin: 0;
+  width: 4vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 35px;
+}
+
+.navbar .block {
+  margin-top: 20px;
+  display: block;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.a {
+  background-color: #a990dc;
+}
+
+.b {
+  background-color: #b99df0;
+}
+
+.c {
+  background-color: #dccbff;
+}
+
+.contain {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.contain .header {
+  font-family: 'Dancing Script';
+  font-size: 22px;
+  text-align: center;
+}
+
+.contain .header h1 {
+  font-size: 5vw;
+  color: white;
+}
+
+.contain .row {
+  font-family: 'Dancing Script';
+  font-size: 22px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+}
+
+.contain .row .column {
+  display: block;
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  border-radius: 10%;
+}
+
+.contain .row .column p {
+  text-align: center;
+}
+
+.login {
+  background: url("background.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+/*# sourceMappingURL=style.css.map */
