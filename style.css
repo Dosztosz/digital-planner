@@ -54,7 +54,7 @@ body {
 
 .content .list .description {
   font-size: 1vw;
-  border: 1px dotted;
+  border: 2px dotted;
   border-radius: 1vw;
 }
 
@@ -88,6 +88,11 @@ body {
   text-align: center;
   border-top-left-radius: 1vw;
   border-top-right-radius: 1vw;
+}
+
+.navbar .block:hover {
+  border-top-left-radius: 0.5vw;
+  border-top-right-radius: 0.5vw;
 }
 
 .a {
